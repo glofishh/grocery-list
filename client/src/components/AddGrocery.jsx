@@ -24,8 +24,9 @@ class AddGrocery extends React.Component {
   }
 
   addGrocery() {
-    console.log(this.state)
-    this.props.addGrocery(this.state.description, this.state.quantity);
+    var input=this.state;
+    console.log(this.state);
+    this.props.addGrocery(input);
   }
 
 
